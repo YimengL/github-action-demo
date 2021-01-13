@@ -31,4 +31,4 @@ jobs:
       - name: SAM Package
         run: sam package --s3-bucket yimeng-test-bucket1 --output-template-file package.yaml
       - name: SAM Deploy
-        run: sam deploy --template-file package.yaml --stack-name githubActionDemo
+        run: sam deploy --template-file package.yaml --stack-name githubActionDemo --capabilities CAPABILITY_IAM
