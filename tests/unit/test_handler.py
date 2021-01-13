@@ -7,7 +7,7 @@ from hello_world import app
 def test_lambda_handler():
 
     ret = app.lambda_handler("", "")
-    assert ret == "hello world"
+    assert ret == "hello world new"
 
 def test_hello():
     actual = "hello test"
