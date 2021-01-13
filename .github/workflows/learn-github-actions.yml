@@ -28,3 +28,5 @@ jobs:
         run: pipenv install -r hello_world/requirements.txt
       - name: Run Unit Tests
         run: pipenv run pytest
+      - name: SAM Package
+        run: sam package --s3-bucket yimeng-test-bucket1 --output-template-file package.yaml
