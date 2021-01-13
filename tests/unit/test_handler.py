@@ -12,4 +12,3 @@ def test_lambda_handler():
 def test_hello():
     actual = "hello test"
     assert actual == "hello test"
-
