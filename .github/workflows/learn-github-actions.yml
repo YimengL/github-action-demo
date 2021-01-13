@@ -12,5 +12,4 @@ jobs:
       - name: Install dependencies with pipenv
         run: pip install pipenv
       - name: Enter the pipenv
-        run: pipenv shell
-             pip install -r hello_world/requirements.txt
+        run: pipenv install -r hello_world/requirements.txt
