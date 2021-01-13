@@ -1,7 +1,9 @@
-name: learn-github-actions
-on: [push]
+name: github-action-sam-demo
+on:
+  push:
+    branches: [ main ]
 jobs:
-  check-bats-version:
+  sam-deploy-pipeline:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
